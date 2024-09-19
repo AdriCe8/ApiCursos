@@ -30,6 +30,7 @@ public class Tema {
     private String descripcion;
     @ManyToOne
     @JoinColumn(name="id_curso")
+    @JsonIgnore
     private Curso curso;
 
     public Tema(int id_tema, String nombre, String descripcion) {
